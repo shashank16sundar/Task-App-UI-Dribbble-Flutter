@@ -24,7 +24,7 @@ class CurvedHorizontalWidget extends StatelessWidget {
     return Container(
       width: double.maxFinite,
       height: height,
-      padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+      padding: const EdgeInsets.fromLTRB(20, 15, 0, 0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: bgColor,
@@ -43,12 +43,13 @@ class CurvedHorizontalWidget extends StatelessWidget {
             children: [
               LargeText(
                 text: desc,
-                size: 20,
+                size: 18,
                 color: Colors.black,
               ),
               MediumText(
                 text: '$tasks Tasks',
                 color: Colors.black54,
+                size: 15,
               ),
             ],
           )

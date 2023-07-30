@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Task App Dribbble',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        //useMaterial3: true,
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),
       home: const HomePage(),
