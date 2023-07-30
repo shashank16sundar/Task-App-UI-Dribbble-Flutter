@@ -47,12 +47,13 @@ class CurvedVerticalWidget extends StatelessWidget {
           const SizedBox(height: 40),
           LargeText(
             text: desc,
-            size: 20,
+            size: 18,
             color: Colors.black,
           ),
           MediumText(
             text: '$tasks Tasks',
             color: Colors.black54,
+            size: 15,
           ),
         ],
       ),

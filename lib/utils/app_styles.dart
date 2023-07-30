@@ -5,6 +5,7 @@ class AppStyles1 {
   static Color largeTextColor = Colors.white;
   static Color greyTextColor = const Color(0xff86A3B8);
   static Color lightBgColor = const Color(0xff212529);
+  static Color lightIconColor = const Color(0xfff1faee);
 }
 
 class LargeText extends StatelessWidget {

@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const SizedBox(
-                  width: 250,
+                  width: 270,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   CurvedVerticalWidget(
-                    width: 140,
+                    width: 110,
                     height: 200,
                     imgUrl: 'img/iphone.png',
                     desc: 'Mobile',

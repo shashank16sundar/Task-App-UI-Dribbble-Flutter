@@ -34,10 +34,10 @@ class CurvedHorizontalWidget extends StatelessWidget {
         children: [
           Image(
             image: AssetImage(imgUrl),
-            width: 50,
-            height: 50,
+            width: 40,
+            height: 40,
           ),
-          const SizedBox(width: 20),
+          const SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
