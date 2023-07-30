@@ -90,6 +90,17 @@ class _SchedulePageState extends State<SchedulePage> {
               height: 30,
               color: AppStyles1.lightBgColor,
               thickness: 2.5,
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              width: 300,
+              height: 200,
+              decoration: const BoxDecoration(
+                  color: Colors.white10,
+                  image: DecorationImage(
+                    image: AssetImage('img/more-diagonals.png'),
+                    fit: BoxFit.cover,
+                  )),
             )
           ],
         ),

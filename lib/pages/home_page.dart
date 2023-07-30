@@ -143,64 +143,6 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color(0xFff1faee),
-        child: const Icon(
-          Icons.add,
-          color: Colors.black,
-          size: 30,
-        ),
-      ),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(20),
-              topRight: Radius.circular(20),
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: AppStyles1.lightBgColor,
-                blurRadius: 10.0,
-                spreadRadius: 10,
-              )
-            ]),
-        child: BottomAppBar(
-          elevation: 20.0,
-          color: AppStyles1.lightBgColor,
-          height: 60,
-          shape: const CircularNotchedRectangle(),
-          notchMargin: 10.0,
-          child: const Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Icon(
-                Icons.home_outlined,
-                color: Color(0xfff1faee),
-                size: 30,
-              ),
-              Icon(
-                Icons.checklist_outlined,
-                color: Color(0xfff1faee),
-                size: 30,
-              ),
-              SizedBox(width: 20),
-              Icon(
-                Icons.chat_bubble_outline,
-                color: Color(0xfff1faee),
-                size: 30,
-              ),
-              Icon(
-                Icons.person_2_outlined,
-                color: Color(0xfff1faee),
-                size: 30,
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }
