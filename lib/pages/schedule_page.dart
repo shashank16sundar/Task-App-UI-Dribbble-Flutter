@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_app_dribbble/utils/app_styles.dart';
 import 'package:task_app_dribbble/widgets/calendar_widget.dart';
+import 'package:task_app_dribbble/widgets/daily_schedule.dart';
 
 class SchedulePage extends StatefulWidget {
   const SchedulePage({super.key});
@@ -15,15 +16,15 @@ class _SchedulePageState extends State<SchedulePage> {
     return Scaffold(
       backgroundColor: AppStyles1.bgColor,
       body: SafeArea(
-        child: ListView(
+        child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               child: Row(
                 children: [
                   SizedBox(
-                    width: 140,
-                    height: 30,
+                    width: 160,
+                    height: 50,
                     //color: Colors.yellow,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -33,7 +34,6 @@ class _SchedulePageState extends State<SchedulePage> {
                           color: Colors.white,
                           size: 23,
                         ),
-                        Expanded(child: Container()),
                         Icon(
                           Icons.arrow_drop_down_rounded,
                           color: AppStyles1.greyTextColor,
@@ -91,16 +91,22 @@ class _SchedulePageState extends State<SchedulePage> {
               color: AppStyles1.lightBgColor,
               thickness: 2.5,
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              width: 300,
-              height: 200,
-              decoration: const BoxDecoration(
-                  color: Colors.white10,
-                  image: DecorationImage(
-                    image: AssetImage('img/more-diagonals.png'),
-                    fit: BoxFit.cover,
-                  )),
+            const SizedBox(height: 30),
+            Expanded(
+              child: SizedBox(
+                width: double.maxFinite,
+                child: ListView(
+                  children: List.generate(
+                    3,
+                    (index) => const Column(
+                      children: [
+                        DailySchedule(),
+                        SizedBox(height: 40),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             )
           ],
         ),

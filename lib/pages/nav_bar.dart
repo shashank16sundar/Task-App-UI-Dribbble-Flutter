@@ -21,7 +21,7 @@ class _NavigationPageState extends State<NavigationPage> {
     const ProfilePage(),
   ];
 
-  int currentPage = 0;
+  int currentPage = 1;
 
   onNavButtonTap(int index) {
     setState(() {

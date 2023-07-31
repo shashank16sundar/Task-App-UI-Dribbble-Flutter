@@ -27,3 +27,21 @@ List<Map<dynamic, dynamic>> ongoingWidgetData = [
     'dueDate': 18,
   }
 ];
+
+String dateFinder(int date) {
+  if (date % 7 == 1) {
+    return "Mon";
+  } else if (date % 7 == 2) {
+    return "Tue";
+  } else if (date % 7 == 3) {
+    return "Wed";
+  } else if (date % 7 == 4) {
+    return "Thu";
+  } else if (date % 7 == 5) {
+    return "Fri";
+  } else if (date % 7 == 6) {
+    return "Sat";
+  } else {
+    return "Sun";
+  }
+}
